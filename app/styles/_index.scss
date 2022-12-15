@@ -1,0 +1,28 @@
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  .header{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >i {
+      margin: 0 1rem ;
+      color: green;
+    }
+    >h1 {
+      font-family: 'Poppins', serif;
+      font-weight: 600;
+      color:red;
+    }
+
+  }
+  >img {
+    margin-top: 80px;
+    width: 20%;
+    height: auto;
+  }
+}
