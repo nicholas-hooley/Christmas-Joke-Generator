@@ -1,30 +1,30 @@
-
-
-.container{
-  background: linear-gradient(to bottom right, #3163d1 ,#041e68);
-  height:100%;
+.container {
+  background: linear-gradient(to bottom right, #3163d1, #041e68);
+  height: 100%;
   width: 100%;
-  position:absolute;
-  left:50%;
-  top:50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
-.snow{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-image: url("https://cdn.discordapp.com/attachments/744182992037216260/990023034524033105/snow1.png"), url("https://cdn.discordapp.com/attachments/744182992037216260/990023034758922250/snow2.png"), url("https://cdn.discordapp.com/attachments/744182992037216260/990023034951827556/snow3.png");
-    animation: snow 20s linear  infinite ;
-  }
-  @keyframes snow {
-    0% {
-      background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-    100% {
-      background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-  }
 
-  
+.snow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: url('https://cdn.discordapp.com/attachments/744182992037216260/990023034524033105/snow1.png'),
+    url('https://cdn.discordapp.com/attachments/744182992037216260/990023034758922250/snow2.png'),
+    url('https://cdn.discordapp.com/attachments/744182992037216260/990023034951827556/snow3.png');
+  animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}

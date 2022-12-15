@@ -1,0 +1,29 @@
+.team-page-text {
+  display: flex;
+  font-family: 'Poppins', serif;
+  font-weight: 200;
+  color: white;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-page-link {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-top: 1rem;
+  position: fixed;
+  bottom: 15%;
+
+  .team-back-button {
+    padding: 1rem;
+
+    span {
+      padding: 0.5rem;
+    }
+  }
+}

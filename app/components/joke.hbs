@@ -1,17 +1,27 @@
-<div class="cracker-container">
-  <i class="fa-solid fa-7x fa-caret-right cracker-triangle-left"></i>
-  <button type='button' class="generate-button" {{on 'click' this.getJoke}}>Pull Cracker
-    <i class="fa-solid fa-arrows-rotate"></i>
+<div class='cracker-container'>
+  <i class='fa-solid fa-5x fa-caret-right cracker-triangle-left'></i>
+  <button type='button' class='generate-button' {{on 'click' this.getJoke}}>Pull
+    Cracker
+    <i class='fa-solid fa-arrows-rotate'></i>
   </button>
-  <i class="fa-solid fa-7x fa-caret-left cracker-triangle-right"></i>
+  <i class='fa-solid fa-5x fa-caret-left cracker-triangle-right'></i>
 </div>
-{{!-- <div class="joke-container"> --}}
-  <div class="{{if this.setup "joke-container-button-pressed" "joke-and-santa-container"}}">
-<div class="{{if this.setup "joke-container" "hide-container"}}">
-  <h2 class="joke-setup">{{this.setup}}</h2>
-  <h1 class="joke-delivery">{{this.delivery}}</h1>
-  <img class="cracker-image" src={{this.imgLink}} alt={{this.imgLink}} />
+{{! <div class="joke-container"> }}
+<div
+  class='{{if
+      this.setup
+      "joke-container-button-pressed"
+      "joke-and-santa-container"
+    }}'
+>
+  <div class='{{if this.setup "joke-container" "hide-container"}}'>
+    <h2 class='joke-setup'>{{this.setup}}</h2>
+    <h1 class='joke-delivery'>{{this.delivery}}</h1>
+    <img class='cracker-image' src={{this.imgLink}} alt={{this.imgLink}} />
+  </div>
+  <img
+    src='/assets/image/318553957_1259460101297087_5344307745413702981_n.png'
+    alt='dancing Santa'
+    class='santa-img'
+  />
 </div>
-<img src='/assets/image/318553957_1259460101297087_5344307745413702981_n.png' alt='dancing Santa'
-      class='santa-img' />
-      </div>

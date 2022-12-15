@@ -29,7 +29,6 @@ export default class JokeComponent extends Component {
     const randomInt = Math.floor(Math.random() * 8);
 
     this.imgLink = `/assets/image/${this.gift[randomInt]}.png`;
-    console.log(imgLink);
 
     return data;
   }

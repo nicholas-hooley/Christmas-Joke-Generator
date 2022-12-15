@@ -1,25 +1,46 @@
-.flex-container{
+.flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
-  .header{
+
+  .header {
     width: 100vw;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
-    >i {
-      margin: 0 1rem ;
+
+    > i {
+      margin: 0 1rem;
       color: green;
     }
-    >h1 {
+
+    > h1 {
       font-family: 'Poppins', serif;
       font-weight: 600;
-      color:red;
+      color: red;
     }
+  }
+}
 
+.team-link {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-top: 1rem;
+  position: fixed;
+  bottom: 15%;
+  font-family: 'Poppins', serif;
+
+  .team {
+    padding: 1rem;
+
+    span {
+      padding: 0.5rem;
+    }
   }
 }

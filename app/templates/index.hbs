@@ -1,22 +1,20 @@
 <GeneralContainer>
   <div class='flex-container'>
-    {{! <h1>Joke of the day</h1> }}
-    {{!-- <h3>{{@model.setup}}</h3>
-    <h4>{{@model.delivery}}</h4> --}}
-    {{!-- <div class="main-header">
-
-    </div> --}}
     <div class='joke-section'>
-      <div class="header">
+      <div class='header'>
         <i class='fa-solid fa-2x fa-sleigh fa-bounce'></i>
         <h1 class='title'>Kilburn Christmas Crackers!</h1>
         <i class='fa-solid fa-2x fa-gift fa-bounce'></i>
       </div>
-
     </div>
     <Joke />
-    {{!-- <img src='/assets/image/318553957_1259460101297087_5344307745413702981_n.png' alt='dancing Santa'
-      class='santa-img' /> --}}
+    <LinkTo @route='team' class='team-link'>
+      <div class='team'>
+        <i class='fa-solid fa-gift'></i>
+        <span>Meet the team!</span>
+        <i class='fa-solid fa-gift'></i>
+      </div>
+    </LinkTo>
   </div>
+  <Footer />
 </GeneralContainer>
-
