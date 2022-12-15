@@ -1,5 +1,13 @@
-<div>
-  <button type='button' {{on 'click' this.getJoke}}>Pull Cracker</button>
-  <h1>{{this.setup}}</h1>
-  <h3>{{this.delivery}}</h3>
+<div class="cracker-container">
+  <i class="fa-solid fa-5x fa-caret-right cracker-triangle-left"></i>
+  <button type='button' class="generate-button" {{on 'click' this.getJoke}}>Pull Cracker
+    <i class="fa-solid fa-arrows-rotate"></i>
+  </button>
+  <i class="fa-solid fa-5x fa-caret-left cracker-triangle-right"></i>
+</div>
+<div class="joke-container">
+  {{log this.imgLink}}
+  <h2 class="joke-setup">{{this.setup}}</h2>
+  <h1 class="joke-delivery">{{this.delivery}}</h1>
+  <img class="cracker-image" src={{this.imgLink}} alt={{this.imgLink}} />
 </div>

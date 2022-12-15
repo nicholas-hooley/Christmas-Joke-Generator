@@ -5,6 +5,8 @@ import { tracked } from '@glimmer/tracking';
 export default class JokeComponent extends Component {
   @tracked delivery = '';
   @tracked setup = '';
+  @tracked gift = ['Badge', 'Bouncy ball', 'Bracelet', 'Cookie cutter', 'Crayons', 'Dice', 'Mini rubix cube', 'Spinning top'];
+  @tracked imgLink = '';
 
   @action
   async getJoke() {
@@ -15,7 +17,11 @@ export default class JokeComponent extends Component {
     this.delivery = data.delivery;
     this.setup = data.setup;
 
-    console.log('hi bee', data.delivery);
+    const randomInt = Math.floor(Math.random() * 8);
+
+    this.imgLink = `/assets/image/${this.gift[randomInt]}.png`;
+    console.log(imgLink);
+
     return data;
   }
 }
