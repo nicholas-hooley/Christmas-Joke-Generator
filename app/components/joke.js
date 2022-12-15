@@ -5,7 +5,16 @@ import { tracked } from '@glimmer/tracking';
 export default class JokeComponent extends Component {
   @tracked delivery = '';
   @tracked setup = '';
-  @tracked gift = ['Badge', 'Bouncy ball', 'Bracelet', 'Cookie cutter', 'Crayons', 'Dice', 'Mini rubix cube', 'Spinning top'];
+  @tracked gift = [
+    'Badge',
+    'Bouncy ball',
+    'Bracelet',
+    'Cookie cutter',
+    'Crayons',
+    'Dice',
+    'Mini rubix cube',
+    'Spinning top',
+  ];
   @tracked imgLink = '';
 
   @action

@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
     >i {
       margin: 0 1rem ;
       color: green;
@@ -20,10 +21,5 @@
       color:red;
     }
 
-  }
-  >img {
-    margin-top: 80px;
-    width: 20%;
-    height: auto;
   }
 }

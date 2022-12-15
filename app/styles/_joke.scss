@@ -6,15 +6,16 @@
   .generate-button {
     border-radius: 10%;
     font-family: 'Poppins', serif;
-    height: 55px;
+    height: 75px;
     font-size: 18px;
     font-weight: 600;
-    width: 200px;
+    width: 250px;
     color: white;
     background: rgb(88,41,41);
     background: linear-gradient(180deg, rgba(88,41,41,1) 0%, rgba(255,0,0,1) 42%, rgba(88,41,41,1) 100%);
     margin: 24px;
     border: 0;
+    font-size:24px;
   }
 
   .cracker-triangle-left {
@@ -31,18 +32,61 @@
   }
 }
 
-.joke-container {
-  display: flex;
-  flex-direction: column;
-  background-color:white;
-  border: 5px solid green;
-  border-radius: 12px;
-  padding: 2rem;
-  font-family: 'Poppins', serif;
-  align-items: center;
-  color: #333333;
 
-  .cracker-image {
-    width: 30%;
+.joke-and-santa-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // .joke-container {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 40%;
+  //   background-color:white;
+  //   border: 5px solid green;
+  //   border-radius: 12px;
+  //   padding: 2rem;
+  //   font-family: 'Poppins', serif;
+  //   align-items: center;
+  //   color: #333333;
+  
+  //   .hide-container {
+  //     display: none;
+  //   }
+  
+  //   .cracker-image {
+  //     width: 30%;
+  //   }
+  // }
+
+
+  >img {
+    margin-top: 80px;
+    width: 20%;
+    height: auto;
   }
+}
+.joke-container-button-pressed {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  .joke-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color:white;
+    border: 5px solid green;
+    border-radius: 12px;
+    padding: 2rem;
+    font-family: 'Poppins', serif;
+    align-items: center;
+    color: #333333;
+}
+>img {
+  margin-top: 80px;
+  width: 20%;
+  height: auto;
+}
 }
